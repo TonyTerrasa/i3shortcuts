@@ -1,0 +1,125 @@
+##################################################
+# Shortcut file for i3
+# Config File Used: /home/terrasa/.config/i3/config
+# Author: Tony Terrasa
+##################################################
+
+
+
+mod2           $mod2    lock computer (-e is ignore empty password)
+
+mod0           0       workspace $ws10
+mod0   shift   0       move container to workspace $ws10
+
+mod0           1        switch to workspace
+mod0   shift   1        move focused container to workspace
+
+mod0           2       workspace $ws02
+mod0   shift   2       move container to workspace $ws02
+
+mod0           3       workspace $ws03
+mod0   shift   3       move container to workspace $ws03
+
+mod0           4       workspace $ws04
+mod0   shift   4       move container to workspace $ws04
+
+mod0           5       workspace $ws05
+mod0   shift   5       move container to workspace $ws05
+
+mod0           6       workspace $ws06
+mod0   shift   6       move container to workspace $ws06
+
+mod0           7       workspace $ws07
+mod0   shift   7       move container to workspace $ws07
+
+mod0           8       workspace $ws08
+mod0   shift   8       move container to workspace $ws08
+
+mod0           9       workspace $ws09
+mod0   shift   9       move container to workspace $ws09
+
+mod0           Down    focus down
+mod0   shift   Down    move down
+
+mod0           Left     alternatively, you can use the cursor keys:
+mod0   shift   Left     alternatively, you can use the cursor keys:
+
+mod0           Return   terminal
+
+mod0           Right   focus right
+
+mod0   shift   Return   ranger
+
+mod0   shift   Right   move right
+
+mod0           Up      focus up
+mod0   shift   Up      move up
+
+mod2           b       exec ~/.config/polybar/launch_polybar.sh 
+
+mod0           c        split in horizontal orientation
+
+mod0           comma   #decrease sound volume
+
+mod0   shift   c        reload the configuration file
+
+mod0   shift   comma   #decrease sound volume
+mod2           comma   # spotify - play previous song
+
+mod0           d        google drive - current window
+
+mod0           e       layout toggle split
+mod0   shift   e        exit i3 (logs you out of your X session)
+
+mod0           f        enter fullscreen mode for the focused container
+
+mod0   shift   g       bindsym $mod+Shift+g move workspace to output left
+
+mod0           h        change focus
+mod0   shift   h        move focused window
+
+mod0           j       focus down
+mod0   shift   j       move down
+
+mod0           k       focus up
+mod0   shift   k       move up
+
+mod0           l       focus right
+mod0   shift   l       move right
+
+mod0           m        musescore 
+mod0   shift   m       bindsym $mod+Shift+m exec xrandr --auto && xrandr --output $hdmiMonitor --right-of $compScreen
+mod2   shift   m       exec xrandr --auto && xrandr --output $hdmiMonitor --pos 0x0 --output $compScreen --off 
+
+mod0   shift   n       exec xrandr --output $hdmiMonitor --off
+mod2   shift   n       exec xrandr --auto && xrandr --output $compScreen --pos 0x0 --output $hdmiMonitor --off
+
+mod0           p       #gid=1671885743
+
+mod0           period  #increase sound volume
+mod0   shift   period  #increase sound volume
+mod2           period  # spotify - play next song
+
+mod0   shift   q        kill focused window
+
+mod0           r        enter resize modk
+mod0   shift   r        restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+
+mod0           space    https://dmenu.readthedocs.io/en/latest/ for arguments, just dictating colors to be same as unfocused/focused windows
+
+mod0           s        screen shots
+
+mod0           slash   # mute sound
+
+mod0   shift   s        spotify
+
+mod0   shift   space    toggle tiling / floating
+
+mod2           slash   # spotify - play current song
+
+mod0           v        split in vertical orientation
+
+mod0           w       bindsym $mod+s layout stacking
+mod0   shift   w        but opens them in a new window
+
+mod0   shift   x        open calendar in a new window
